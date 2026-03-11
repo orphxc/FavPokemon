@@ -1,13 +1,13 @@
-import { Component, inject} from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { PokemonService } from '../pokemon.service';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-cart',
   imports: [CommonModule],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  templateUrl: './cart.component.html',
+  styleUrl: './cart.component.css'
 })
-export class HomeComponent {
+export class CartComponent {
   PokemonService = inject(PokemonService);
 }
